@@ -105,7 +105,7 @@ run_deg <- function(count_matrix,
     
     raw_deg <- topTable(fit2, number = Inf, adjust.method = "BH") %>%
       tibble::rownames_to_column(var = "symbol") %>%
-      rename(
+      dplyr::rename(
         log2FC  = logFC,      # 统一 Log Fold 2 Change
         AveExpr = AveExpr,
         pvalue  = P.Value,    # 统一 P.value
@@ -145,7 +145,7 @@ run_deg <- function(count_matrix,
     
     raw_deg <- as.data.frame(res) %>%
       tibble::rownames_to_column(var = "symbol") %>%
-      rename(
+      dplyr::rename(
         log2FC  = log2FoldChange,
         AveExpr = baseMean,
         pvalue  = pvalue,
