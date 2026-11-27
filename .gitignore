@@ -55,9 +55,17 @@ results/*
 datas/*
 !datas/.gitkeep
 
+R/datas/*
+!R/datas/.gitkeep
+
 Results/*/*
 !Results/**/.gitkeep
 
+dir_temp/*
+!dir_temp/.gitkeep
+
+R/dir_temp/*
+!R/dir_temp/.gitkeep
 
 
 
